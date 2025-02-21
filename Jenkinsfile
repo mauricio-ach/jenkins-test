@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Construyendo el proyecto...'
+                sh 'echo "console.log(\'Construyendo el proyecto...\')"'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Ejecutando pruebas...'
+                sh 'echo "console.log(\'Ejecutando pruebas...\')"'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Desplegando el proyecto...'
+                sh 'echo "console.log(\'Desplegando el proyecto...\')"'
             }
         }
     }
